@@ -6,8 +6,16 @@
 \usepackage{listings}
 \lstset{basicstyle=\small\ttfamily}
 \usepackage{booktabs}
-\usepackage{cite}
+\usepackage[noadjust]{cite}
+\bibliographystyle{IEEEtran}
 \newcommand{\Matlab}{Matlab}
+\usepackage[inputamerican,english,cleanlook]{isodate}
+\newcommand{\Dudleyanesiotica}{\emph{Dudleya nesiotica}}
+\newcommand{\Dnesiotica}{\emph{D.~nesoitica}}
+\newcommand{\Dudleya}{\emph{Dudleya}}
+\newcommand{\Malvaassurgentiflora}{\emph{Malva assurgentiflora}}
+\newcommand{\Massurgentiflora}{\emph{M.~assurgentiflora}}
+\newcommand{\Malva}{\emph{Malva}}
 
 \title{Bio title here}
 \author{Midshipman 1/C Reina Carroll, Midshipman 1/C Jacob Kang,  Midshipman 1/C Ji Lim, Midshipman 1/C Bryan Phan and Midshipman 2/C Levi Hofland}
@@ -37,26 +45,27 @@ Environmental and ecological research are often constrained by the accessibility
 \subsection{Customer interview}
 Dr. Matt Guilliams, a plant systematist and curator of the Santa Barbara Botanical Garden's Clifton Smith Herbarium, studies the flora of California including floristics, biodiversity description, inferring evolutionary patterns, and genetic conservation of rare plants. He is currently researching the endemic species of flora on the Channel Islands. Endemic refers to species of flora or fauna that only exists in specific areas of the world. Dr. Matt Guilliams wants to identify and collect samples of understudied species of flora on the Channel Islands off the coast of Santa Barbara because he seeks to protect the endemic plants of these islands.
 
-Our team interviewed Dr. Guilliams through a phone call on Sept. 11, 2019 in order to discuss his vision for the project and gain insights on the environment we will be working in. This interview highlighted that the species of plant we are trying to collect is located on the cliffside of the Channel Island, reaching heights up to 50 feet tall. The two species of plants that Dr. Guilliams is interested in is the Malva Assurgentiflora and the Dudleya Nesiotica plants. The Malva is about 0.5-5 cm in diameter and the Dudleya nesiotica plant ranges from 1 - 6 cm in diameter [4][5]. He also mentioned that this type of project has been attempted in Hawaii, however the UAS was only made to survey the hard-to-reach plants.  The UAS operator and the climber were deployed via helicopter into the area for the operation. The  environment surrounding Channel Island may have wind conditions from 15 to 40 miles per hour [1].  Dr. Guilliams’ vision for the project is that the end product will be a UAS system that does not require the use of a helicopter.
+Our team interviewed Dr. Guilliams through a phone call on Sept. 11, 2019 in order to discuss his vision for the project and gain insights on the environment we will be working in. This interview highlighted that the species of plant we are trying to collect is located on the cliffside of the Channel Island, reaching heights up to 50 feet tall. The two species of plants that Dr. Guilliams is interested in is the \Malvaassurgentiflora\ and the \Dudleyanesiotica\ plants. The \Malva\ is about 0.5-5 cm in diameter and the \Dudleyanesiotica\ plant ranges from 1 - 6 cm in diameter \cite{jeps2019dudleya}\cite{wikipedia2019malva}. He also mentioned that this type of project has been attempted in Hawaii, however the UAS was only made to survey the hard-to-reach plants.  The UAS operator and the climber were deployed via helicopter into the area for the operation. The  environment surrounding Channel Island may have wind conditions from 15 to 40 miles per hour \cite{nps2019weather}.  Dr. Guilliams’ vision for the project is that the end product will be a UAS system that does not require the use of a helicopter.
+
 There are many laws that govern the use of UASs, and also the accessibility of the channel islands.  FAA laws govern the piloting of unmanned vehicles.  There may be a license that we need in order to operate the UAS on behalf of the botanical garden.  The islands are also protected areas, therefore going to retrieve the UAS (if it were to crash) may become complicated.  One island is owned privately, two are owned by the Navy, and the rest are operated by the national parks service.  Each island has its own specific rules when it comes to human contact.
 \begin{figure}
-\caption{Picture of Malva genus plant [5].}
+\caption{Picture of \Malva\ genus plant \cite{wikipedia2019malva}.}
 \end{figure}
 \begin{figure}
-\caption{Illustration of Dudleya nesiotica plant [4].}
+\caption{Illustration of \Dudleyanesiotica\ plant \cite{jeps2019dudleya}.}
 \end{figure}
 
 
 
 \subsection{Additional Background Research}
 We hope to develop innovative methods in the fields of surveying, identification, and object retrieval in places that are difficult to reach. This technology can be refined and tailored for industrial or military in survey and retrieval. 
-We looked at the history of air and water temperatures for the environment surrounding the Channel Islands over the past five years during the month of March, our intended operational period. The average air temperature in March has a high of 65°F and a low of 49°F [2]. The average water temperature has a high of 58.8°F and a low of 53.6°F [2]. In the case where a human person is thrown off the Rigid Hull Inflatable Boat (RHIB) and into the water we have 1-2 hours to rescue them before they develop hypothermia in water conditions from 50°F-60°F. Fog is a common weather feature, especially at San Miguel and Santa Rosa Islands [1]. Fog is most common in spring and summer, and west of the Santa Cruz Channel [1]. The marine layer fog flows down the coast with the prevailing NW wind, and bends around Point Conception, usually blanketing San Miguel and Santa Rosa, and often the western portion of Santa Cruz Island [1]. Fog frequently is thicker and lingers longer into the day offshore than along the mainland coast [1]. Preliminary data from Santa Cruz Island suggests that geographic variation in the presence and duration of the fog layer has a profound influence on the temperature and humidity regimes [1]. Furthermore, the island chain itself has 8 major islands with the largest having an area of 96.51 sq. miles [1]. 
+We looked at the history of air and water temperatures for the environment surrounding the Channel Islands over the past five years during the month of March, our intended operational period. The average air temperature in March has a high of 65°F and a low of 49°F \cite{accuweather2019channel}. The average water temperature has a high of 58.8°F and a low of 53.6°F \cite{accuweather2019channel}. In the case where a human person is thrown off the Rigid Hull Inflatable Boat (RHIB) and into the water we have 1-2 hours to rescue them before they develop hypothermia in water conditions from 50°F-60°F. Fog is a common weather feature, especially at San Miguel and Santa Rosa Islands \cite{nps2019weather}. Fog is most common in spring and summer, and west of the Santa Cruz Channel \cite{nps2019weather}. The marine layer fog flows down the coast with the prevailing NW wind, and bends around Point Conception, usually blanketing San Miguel and Santa Rosa, and often the western portion of Santa Cruz Island \cite{nps2019weather}. Fog frequently is thicker and lingers longer into the day offshore than along the mainland coast \cite{nps2019weather}. Preliminary data from Santa Cruz Island suggests that geographic variation in the presence and duration of the fog layer has a profound influence on the temperature and humidity regimes \cite{nps2019weather}. Furthermore, the island chain itself has 8 major islands with the largest having an area of 96.51 sq. miles \cite{nps2019weather}. 
 \begin{figure}
-\caption{Aerial Image of the Channel Islands. The larger islands form a National Park which hold many endemic and endangered species of plants [6].}
+\caption{Aerial Image of the Channel Islands. The larger islands form a National Park which hold many endemic and endangered species of plants \cite{nps2019webpage}.}
 \end{figure}
 
 \begin{figure}
-\caption{Map of the Channel Islands National Park located 30 miles South of the Santa Barbara Coast [7].}
+\caption{Map of the Channel Islands National Park located 30 miles South of the Santa Barbara Coast \cite{nps2019submerged}.}
 \end{figure}
 
 
@@ -66,7 +75,7 @@ We looked at the history of air and water temperatures for the environment surro
 
 \section{Problem Statement}
 \subsection{Problem Statement}
-Our goal is to support the research of Dr. Matthew Guilliams, plant systematist and curator at the Santa Barbara Botanical Garden's Clifton Smith Herbarium, through the survey, extraction, and recovery of the Dudleya Nesiotica and Malva Assurgentiflora, plants endemic to the Channel Islands. Operations will take place near the coastal cliffs of the Channel Islands located off the coast of Santa Barbara. These remote islands are accessible only by boat, and by law, humans are forbidden to step foot on certain islands for environmental protection measures. The two plants of interest are in the vicinity of possibly endangered species, so the team must not harm or disturb the plants surrounding the plant of interest. 
+Our goal is to support the research of Dr. Matthew Guilliams, plant systematist and curator at the Santa Barbara Botanical Garden's Clifton Smith Herbarium, through the survey, extraction, and recovery of the \Dudleyanesiotica\ and \Malvaassurgentiflora, plants endemic to the Channel Islands. Operations will take place near the coastal cliffs of the Channel Islands located off the coast of Santa Barbara. These remote islands are accessible only by boat, and by law, humans are forbidden to step foot on certain islands for environmental protection measures. The two plants of interest are in the vicinity of possibly endangered species, so the team must not harm or disturb the plants surrounding the plant of interest. 
 
 \subsection{Functions}
 \begin{figure}
@@ -74,7 +83,7 @@ Our goal is to support the research of Dr. Matthew Guilliams, plant systematist 
 \end{figure}
 
 \subsection{Constraints}
-The average air temperature of the Channel Islands in March is a high of 65°F and a low of 49°F [2]. Colder air temperatures will affect the gear needed for operations such as the need for layered clothing, gloves, and thermal insulators for UAS batteries. The average water temperature in March can range from a high of 58.8°F and a low of 53.6°F [1]. If water temperatures are low and the air temperatures are high, there is a high chance for fog which may potentially decrease the field of vision. Severe fog will affect vision and could lead to modification or cancellation of UAS operations. If water temperatures are high, there may be an increase in humidity that will affect the UAS system. Safety during UAS operations are a top priority, thus we must follow safety protocol to ensure no one in the team is at risk for injury or death. As sea state is another factor that will affect RHIB operations, the UAS operations must be done in Channel Island locations with low sea state conditions to ensure optimal operational success. The operational environment is different from a typical flat ground environment in which the Channel Islands’ geography is full of rugged terrain and cliffs. The plants of interest are usually found along the slanted cliffs of the islands, thus we must take into consideration of how the UAS will be designed to ensure the best chances of success in extracting and securing plant samples. 
+The average air temperature of the Channel Islands in March is a high of 65°F and a low of 49°F \cite{accuweather2019channel}. Colder air temperatures will affect the gear needed for operations such as the need for layered clothing, gloves, and thermal insulators for UAS batteries. The average water temperature in March can range from a high of 58.8°F and a low of 53.6°F \cite{nps2019weather}. If water temperatures are low and the air temperatures are high, there is a high chance for fog which may potentially decrease the field of vision. Severe fog will affect vision and could lead to modification or cancellation of UAS operations. If water temperatures are high, there may be an increase in humidity that will affect the UAS system. Safety during UAS operations are a top priority, thus we must follow safety protocol to ensure no one in the team is at risk for injury or death. As sea state is another factor that will affect RHIB operations, the UAS operations must be done in Channel Island locations with low sea state conditions to ensure optimal operational success. The operational environment is different from a typical flat ground environment in which the Channel Islands’ geography is full of rugged terrain and cliffs. The plants of interest are usually found along the slanted cliffs of the islands, thus we must take into consideration of how the UAS will be designed to ensure the best chances of success in extracting and securing plant samples. 
 
 The landing platform for the UAS operations will be conducted from a RHIB. There will be a limited amount of space for takeoff and landing. There will need to be room for the whole group (5) and a botanist/scientist.  The system must be capable of VTOL (Vertical Takeoff and Landing). In terms of the time period for operation, UAS operations must be conducted during daylight. If there is a day where we cannot fly, there is no way to make up the time by flying at night. The UAS operation cannot damage the environment or other species as the species may be endangered. If the operations were to fail, we must make sure that the UAS will not crash into the island and destroy nature.  Also, one must know when extracting a sample is the appropriate action. For safety of team during RHIB operations, UAS take off, and UAS landing, since the UAS will be taking off and landing on the RHIB, we must make sure that we create and practice a specific and reliable procedure. A constraint concerning securing sample is when the UAS is returning to RHIB, it can be difficult with rotor wash and wind. 
 
@@ -85,7 +94,7 @@ The landing platform for the UAS operations will be conducted from a RHIB. There
 
 The system can fly, hover, or swim so it can reach the target plant. The system must be able to withstand variable wind speeds or sea states while flying, hovering, or swimming. After extraction, the system must be able to function normally and safely bring back the sample.
 Objectives for Sampler portion: Part of the system that can actively extract the plant sample
-The extraction subsystem must have enough robustness and degrees of freedom to extract both the Dudleya, a low hanging succulent, and the Malva Assurgentiflora, a flower plant. The UAS must minimally impact the surrounding environment, and precisely cut off the desired sample from the rest of the plant so as to cause minimal harm to the plant. The extraction subsystem must hold and preserve the sample until returning to the boat.
+The extraction subsystem must have enough robustness and degrees of freedom to extract both the \Dudleya, a low hanging succulent, and the \Malvaassurgentiflora, a flower plant. The UAS must minimally impact the surrounding environment, and precisely cut off the desired sample from the rest of the plant so as to cause minimal harm to the plant. The extraction subsystem must hold and preserve the sample until returning to the boat.
 \begin{table}
 \caption{Pairwise Comparison Chart: each metric was compared to the other metrics to determine weights of each metric based on importance to the system.}
 \end{table}
@@ -115,9 +124,9 @@ Our team developed four metrics to accurately evaluate our design. The metrics a
 
 \section{Related Work}
 \subsection{National Botanical Garden (NTBG) Plant Survey using UAS}
-Ben Nyberg, a UAS operator with NTBG used his UAS to survey and gather footage of plants that are native to Hawaii in hard-to-reach areas.  His job consisted of driving/hiking/helicoptering to the flight location and deploying his UAS.  The average flight time for the UAS ranged from 20-30 minutes.  There is usually an assistant with him to help keep the UAS in sight at all times.  All plants are manually identified by the pilot himself during flight operations, and the footage was brought back to other plant experts afterwards.  A big problem that the team ran into was weather.  The islands were very humid and any sort of wind would affect the flight and the control of the UAS [3]. 
+Ben Nyberg, a UAS operator with NTBG used his UAS to survey and gather footage of plants that are native to Hawaii in hard-to-reach areas.  His job consisted of driving/hiking/helicoptering to the flight location and deploying his UAS.  The average flight time for the UAS ranged from 20-30 minutes.  There is usually an assistant with him to help keep the UAS in sight at all times.  All plants are manually identified by the pilot himself during flight operations, and the footage was brought back to other plant experts afterwards.  A big problem that the team ran into was weather.  The islands were very humid and any sort of wind would affect the flight and the control of the UAS \cite{mongabay2019hunting}. 
 \begin{figure}
-\caption{Picture of Ben Nyberg, a UAS operator with NTBG, using a UAS for surveying [3].}
+\caption{Picture of Ben Nyberg, a UAS operator with NTBG, using a UAS for surveying \cite{mongabay2019hunting}.}
 \end{figure}
 
 The difference with this design with regards to our mission is that the UAS does not collect samples of the plant and is only used as a means to survey the land. If a species is identified, a professional climber would be airlifted from a helicopter to manually collect the sample. Furthermore, the UAS pilot is able to operate on land where as in our project we will be confined in a RHIB. 
@@ -127,7 +136,7 @@ In our design, we would like to create a UAS that can survey the land to identif
 \subsection{University of California, Santa Barbara Sampler UAS}
 A capstone project of the Mechanical Engineering department of the University of California, Santa Barbara, created a UAS that can fly and take samples of plants.  Their main problem to solve was taking samples of plants in hard-to-reach places using an arm that dangled below the UAS.  The main plants that were sampled were branches of tall trees.  The design that was used can be seen below.
 \begin{figure}
-\caption{UCSB design for sampler UAS [8].}
+\caption{UCSB design for sampler UAS \cite{dantonio2018sampler}.}
 \end{figure}
 
 Issues with this design with regards to our mission: Average flight time of 7 minutes; Made to cut larger branches; The control of the UAS greatly affected the quality of the sample; Octocopter was used instead of a quadcopter.
@@ -135,9 +144,9 @@ Issues with this design with regards to our mission: Average flight time of 7 mi
 Although a working design, the UCSB capstone design was unable to fly for our minimum flight time of 15 minutes.  The design also is not ideal for sampling plants that are growing on near-vertical cliffs because the UAS would not be able to position itself directly overhead of the plant. 
 
 \subsection{Airborne refueling probe basket}
-The military uses a system called a probe-and-drogue which employs a hose from a tanker aircraft with a drogue (a funnel-like basket) attached to the end of the hose in order to catch the probe on the receiving aircraft.  The basket is made to be drag-resistant and sturdy enough to guide the probe into the nozzle [21].    
+The military uses a system called a probe-and-drogue which employs a hose from a tanker aircraft with a drogue (a funnel-like basket) attached to the end of the hose in order to catch the probe on the receiving aircraft.  The basket is made to be drag-resistant and sturdy enough to guide the probe into the nozzle \cite{ren2019reliable}.    
 \begin{figure}
-\caption{Picture of Airborne refueling probe basket [21]}
+\caption{Picture of Airborne refueling probe basket \cite{ren2019reliable}}
 \end{figure}
 
 This type of design is helpful for the snipper/gripper design because this will help guide the plant into the hole where it can be cut and stored.  However, funneling a plant is different than guiding a fuelling probe.  The refuelling drogue is made to fly backwards while our fixture is facing into the direction of flight.  In our design we incorporated a cone-shaped mesh to help funnel a branch into the cutting zone.
@@ -154,20 +163,20 @@ When reviewing the customer requirements and overall objectives our team was abl
 
 
 \subsection{Concept 1: Quadcopter Survey and Extraction}
-The first concept that was evaluated was the Quadcopter Survey and Extraction. The UAS will only have a camera system when surveying to maximised flight time. Currently we are working with the DJI Matrice 100 and the Zenmuse X3 camera and gimbal [13].  The maximum hovering time of with two batteries, gimbal and camera set up is 30 minutes giving us a 3/4 on our operating time matrics [9]. 30 minutes gives sufficient flight time to complete an operation in non ideal conditions as well as flexibility when surveying island cliffs. While 30 minutes is not much time, it's on average higher than other quadcopters of its size and capability. Furthermore the Matrice 100 is able to fly in a maximum of 22 miles per hour wind conditions [10].
+The first concept that was evaluated was the Quadcopter Survey and Extraction. The UAS will only have a camera system when surveying to maximised flight time. Currently we are working with the DJI Matrice 100 and the Zenmuse X3 camera and gimbal \cite{dji2019zenmuse}.  The maximum hovering time of with two batteries, gimbal and camera set up is 30 minutes giving us a 3/4 on our operating time matrics \cite{dji2019dji}. 30 minutes gives sufficient flight time to complete an operation in non ideal conditions as well as flexibility when surveying island cliffs. While 30 minutes is not much time, it's on average higher than other quadcopters of its size and capability. Furthermore the Matrice 100 is able to fly in a maximum of 22 miles per hour wind conditions \cite{dji2016m100}.
 With the maximum winds of the Channel Islands in March being 18 mph this system scored a 4/4 on our tenacity metric.  After launching from the RHIB, the UAS will follow waypoints around the perimeter of the island and utilize a camera system to record the cliffside. Once sufficient video is taken or a low power mode is activated the UAS will return back to the RHIB where our team will extract the footage for review.  After reviewing the footage if there is a plant species that needs to be collected we will attach, in addition to the Zenmuse X3 gimbal, our extraction system. 
 The Matrice 100 has an estimated maximum payload of 1.15 kg for one battery excluding the weight of that battery. The maximum weight for two batteries needs to be tested given the extra battery weighs 672 grams. Currently we give the Matrice a  2/4 acceptable rating in our total required payload metric which includes extraction device, camera and plant sample. The Zenmuse X3 and gimbal’s weight is 247 g giving our team the remander 868 grams to work with. We will release the Matrice, use the extraction system to collect a sample of the plant and return back to the RHIB successfully. The conceptual design of the extractors will be discussed later in this section.  
 \begin{figure}
-\caption{DJI Matrice 100, Prototype Drawing of Extraction Mechanism, and Zenmuse X3 Gimbal respectively [11][13].}
+\caption{DJI Matrice 100, Prototype Drawing of Extraction Mechanism, and Zenmuse X3 Gimbal respectively \cite{dronesmadeeasy2019matrice}\cite{dji2019zenmuse}.}
 \end{figure}
 
 
 
 \subsection{Concept 2:  Fixed-Wing Quadrotor Combo}
-The second concept that was evaluated was the Fixed-Wing Quadrotor Combo. The Fixed Wing UAS would be used for the initial steps of surveying the island to search and identify the respective plant species. On average the operating time of fixed wing aerial systems is 45 minutes giving the Operating Time metric a 4/4. 45 minutes gives sufficient time to troubleshoot complications if arise and complete the operation. The payload of the Fixed Wing UAS is not as important because there are usually built in cameras. Whereas the payload and overall specifications of the Quadcopter will be the same as in concept one. The Matrice 100  would be sent out to desired plant location for extraction due to its higher stability. The pros of incorporating the fixed wing UAS would be an estimated 50\% increase in operating time and potentially high video quality. The downside would be purchasing/acquiring a whole new system, learning how to use it and takeoff/landing procedures. We looked at the WingtraOne, a fixed wing UAS developed by Wingtra [12]. The Wingtra has no listed price but camera offers a minimal ground sampling distance of 0.7 cm and vertical take off and landing [12]. 
+The second concept that was evaluated was the Fixed-Wing Quadrotor Combo. The Fixed Wing UAS would be used for the initial steps of surveying the island to search and identify the respective plant species. On average the operating time of fixed wing aerial systems is 45 minutes giving the Operating Time metric a 4/4. 45 minutes gives sufficient time to troubleshoot complications if arise and complete the operation. The payload of the Fixed Wing UAS is not as important because there are usually built in cameras. Whereas the payload and overall specifications of the Quadcopter will be the same as in concept one. The Matrice 100  would be sent out to desired plant location for extraction due to its higher stability. The pros of incorporating the fixed wing UAS would be an estimated 50\% increase in operating time and potentially high video quality. The downside would be purchasing/acquiring a whole new system, learning how to use it and takeoff/landing procedures. We looked at the WingtraOne, a fixed wing UAS developed by Wingtra \cite{wingtra2019wingtraone}. The Wingtra has no listed price but camera offers a minimal ground sampling distance of 0.7 cm and vertical take off and landing \cite{wingtra2019wingtraone}. 
 
 \begin{figure}
-\caption{Fixed-wing UAS, DJI Matrice 100 with Zenmuse X3 Attached, and Prototype Drawing of Extraction Mechanism respectively  [11][12][13]}
+\caption{Fixed-wing UAS, DJI Matrice 100 with Zenmuse X3 Attached, and Prototype Drawing of Extraction Mechanism respectively  \cite{dronesmadeeasy2019matrice}\cite{wingtra2019wingtraone}\cite{dji2019zenmuse}}
 \end{figure}
 
 
@@ -177,7 +186,7 @@ The second concept that was evaluated was the Fixed-Wing Quadrotor Combo. The Fi
 \subsection{Concept 3:  Climbing Robot}
 Robot with Four Servo legs that is able to climb onto steep rocky cliffs and be able to extract plant sample through extraction device beneath the robot. The benefits of this design are its operating time, payload and tenacity. The robot itself needs to be transported onto the island via quadcopter. Because the robot is constricted to the ground and limited in movement its use for surveying the island to search and identify plants would be futile. Whereas recovering the plant would not be, given that a ground system does not need to adhere to the same physics as our air counterparts we will be able to attach a hefty payload and in turn maximise our operating time.  Cliff Climbing Robots are built with hook like claws to attach to rocky surfaces and potentially with anti-vibration and anti-wind loading. The robot will be able to withstand the highest winds speed of the channels island scoring highest in our tenacity metric. While  these ideas are great in theory, developing a whole robotic cliff climbing robot is beyond our capabilities  and level of experience. Furthermore, the system that delivers the UAS must provide a payload that can withstand the weight of the robot. 
 \begin{figure}
-\caption{NASA JPL Lemur 3 Climbing Robot [14]}
+\caption{NASA JPL Lemur 3 Climbing Robot \cite{donahue2017new}}
 \end{figure}
 
 
@@ -193,12 +202,12 @@ This extraction system utilizes spring power over a cigar cutter to cut the plan
 
 
 \subsection{Concept 5: Mythbuster Motorized Shear}
-Developed by Mythbusters host Jamie Hyneman, the motorized shear uses a high torque motor and a worm drive gear orientation to translate a motor’s single axis spin into planar rotational motion. The planar circular motion controls the end effector shears to repeatedly open and close at a comfortable speed. In the video, Jamie Hyneman demonstrates how powerful the shears are by easily cutting through thick branches, and then proceeds to attach the subsystem to his UAS. He flies the UAS to a bush and begins cutting branches off [17]. This is exactly the kind of design that we envision.
+Developed by Mythbusters host Jamie Hyneman, the motorized shear uses a high torque motor and a worm drive gear orientation to translate a motor’s single axis spin into planar rotational motion. The planar circular motion controls the end effector shears to repeatedly open and close at a comfortable speed. In the video, Jamie Hyneman demonstrates how powerful the shears are by easily cutting through thick branches, and then proceeds to attach the subsystem to his UAS. He flies the UAS to a bush and begins cutting branches off \cite{mbed2019}. This is exactly the kind of design that we envision.
 \begin{figure}
-\caption{Worm drive diagram that shows how axis rotation can be translated into rotational planar motion [16].}
+\caption{Worm drive diagram that shows how axis rotation can be translated into rotational planar motion \cite{wikipedia2019wormdrive}.}
 \end{figure}
 \begin{figure}
-\caption{The end effector of the motorized shear [17].}
+\caption{The end effector of the motorized shear \cite{mbed2019}.}
 \end{figure}
 
 
@@ -226,7 +235,7 @@ Table 4.6.1 shows our analysis of comparing all three he designs. While the sing
 
 \section{Ethical Considerations}
 
-Our project inherently contained a lot of space restrictions, and the nature of the mission has many restrictions placed by the Environmental Protection Agency (EPA).  A primary ethical concern for our project is nested in the act of damaging endangered species.  In order to retrieve a sample of an endangered species, it must be damaged.  This goes against the Endangered Species Act (ESA) of 1973 which states that endangered species cannot be carried, delivered, received, or shipped [20].  The act also states that endangered species cannot be damaged or destroyed in knowing violation of any law.  The Santa Barbara Botanical Garden has a permit to invade these islands and collect the samples.  As a team, we must make sure that, even though we have permission to damage the endangered plant life, we keep the damage to a bare minimum.  As a team, we must make sure that the assurances we make are honest and realistic to ensure that there is no miscommunication of expectations between us and the customer (for example: if our system is likely to damage to  the plant and the surrounding cliff, we must be clear about it).  This complies with the Institute of Electrical and Electronics Engineers (IEEE) Code of Ethics.  During testing, there may be times when we are forced to make a decision between the safety of ourselves or the safety/success of the mission.  For example, when landing the drone on the boat, team members may reach out to grab the drone if it looks like it will not stably land on the platform.  This may potentially cause the team member to hurt his/her hand or fall out of the boat.  As a team, we must comply with the IEEE Code of ethics which states that we need to “hold paramount the safety of the public” and “avoid injuring others.”  In order to mitigate this risk, we must understand our own capabilities and only attempt endeavors at which we are most likely to succeed.  Being aware of one’s capabilities and acting within our abilities is emphasized by both the IEEE Code of ethics, and the Profession Engineer’s Code. 
+Our project inherently contained a lot of space restrictions, and the nature of the mission has many restrictions placed by the Environmental Protection Agency (EPA).  A primary ethical concern for our project is nested in the act of damaging endangered species.  In order to retrieve a sample of an endangered species, it must be damaged.  This goes against the Endangered Species Act (ESA) of 1973 which states that endangered species cannot be carried, delivered, received, or shipped \cite{czech2001endangered}.  The act also states that endangered species cannot be damaged or destroyed in knowing violation of any law.  The Santa Barbara Botanical Garden has a permit to invade these islands and collect the samples.  As a team, we must make sure that, even though we have permission to damage the endangered plant life, we keep the damage to a bare minimum.  As a team, we must make sure that the assurances we make are honest and realistic to ensure that there is no miscommunication of expectations between us and the customer (for example: if our system is likely to damage to  the plant and the surrounding cliff, we must be clear about it).  This complies with the Institute of Electrical and Electronics Engineers (IEEE) Code of Ethics.  During testing, there may be times when we are forced to make a decision between the safety of ourselves or the safety/success of the mission.  For example, when landing the drone on the boat, team members may reach out to grab the drone if it looks like it will not stably land on the platform.  This may potentially cause the team member to hurt his/her hand or fall out of the boat.  As a team, we must comply with the IEEE Code of ethics which states that we need to “hold paramount the safety of the public” and “avoid injuring others.”  In order to mitigate this risk, we must understand our own capabilities and only attempt endeavors at which we are most likely to succeed.  Being aware of one’s capabilities and acting within our abilities is emphasized by both the IEEE Code of ethics, and the Profession Engineer’s Code. 
 
 
 
@@ -235,7 +244,7 @@ Our project inherently contained a lot of space restrictions, and the nature of 
 \section{Engineering Standards and Specifications}
 
 \begin{table}
-\caption{Lithium Battery Standards Table [15]}
+\caption{Lithium Battery Standards Table \cite{mpoweruk2019international}}
 \end{table}
 
 Lithium Batteries are a staple in any operation involving UAS because of their high specific energy, extremely advantageous when weight is a constraint. There are numerous standards for lithium polymer battery training, safety, and use in aircraft operations. Our team completed lithium polymer battery training with Professor Evangelista.
@@ -311,14 +320,14 @@ After discussing the Pac-Man design with the workers at the Machine Shop, it was
 Figure 7.12 shows the circuitry for the extraction device with a 12V power source, an LPC1768 microcontroller, and a motor. The LPC1768 has a recommended voltage input of 4.5V to 9V, but it can function, with increased heat conversion, as long as the current is kept under 150mA. as  We will use a 12V Motor to spin our end effector which is in parallel to the LPC 1768. The LPC 1768 will send a fixed PWM signal to the motor when prompted by the user.
 This circuit represents the extraction device at a prototype level. In the air, the user will have to prompt the LPC1768 through wireless or radio communication. In the future, we will test with RC transmitters and receivers and incorporate them in the circuit to simulate a UAS in the air. 
 \begin{figure}
-\caption{Pin Allocations for the mbed LPC1768 Microcontroller [17]}
+\caption{Pin Allocations for the mbed LPC1768 Microcontroller \cite{mbed2019}}
 \end{figure}
 
 \subsection{Prototypes}
 
 \subsubsection{Parrot Bebop UAS}
 \begin{figure}
-\caption{Parrot Bebop UAS [19]}
+\caption{Parrot Bebop UAS \cite{parrot2019parrot}}
 \end{figure}
 The Parrot Bebop UAS is a small scale prototype of the DJI Matrice 100. Testing on the prototype included video recording and putting a mock extraction device and see how it flew. This was before the DJI Matrice 100 was available for use. 
 
@@ -556,31 +565,8 @@ Jisub performed better as the UAS pilot than Bryan. The UAS lands automatically 
 
 
 
+\nocite{hyneman2017jamie, famoussmoke2019cigar} % never used? 
 %\section{References}
-\bibliography{references/biosteve.bib}
-%References
-%    [1] “Weather,” National Parks Service. [Online]. Available: http://www.nps.gov/chis/learn/nature/weather.htm. [Accessed: 06-Dec-2019].
-%    [2] “Channel Islands Beach, CA Monthly Weather,” AccuWeather. [Online]. Available: http://www.accuweather.com/en/us/channel-islands-beach-ca/93035/march-weather/2189787. [Accessed: 06-Dec-2019].
-%    [3] “Hunting for rare plants in inaccessible spots: Q&A with UAS pilot Ben Nyberg,” Hunting for rare plants in inaccessible spots: Q&A with UAS pilot Ben Nyberg, 13-May-2019. [Online]. Available: https://news.mongabay.com/2019/05/hunting-for-rare-plants-in-inaccessible-spots-qa-with-UAS-pilot-ben-nyberg/. [Accessed: 02-Dec-2019].
-%    [4] Ucjeps.berkeley.edu. (2019). Dudleya nesiotica. [online] Available at: http://ucjeps.berkeley.edu/eflora/eflora_display.php?tid=23667#MAP [Accessed 6 Dec. 2019].
-%    [5] “Malva,” Wikipedia, 22-Sep-2019. [Online]. Available: https://en.wikipedia.org/wiki/Malva. [Accessed: 06-Dec-2019].
-%    [6] “NPS.gov Homepage (U.S. National Park Service),” National Parks Service. [Online]. Available: https://www.nps.gov/index.htm. [Accessed: 06-Dec-2019].
-%    [7] “nps.gov/submerged : Submerged Resources Center, National Park Service, Denver, Colorado,” National Parks Service. [Online]. Available: https://www.nps.gov/submerged/Parks/CHIS.html. [Accessed: 06-Dec-2019].
-%    [8] “D'Antonio and Oono Labs Sampler Drone,” Engineering Capstone | College of Engineering | UC Santa Barbara,      01-Jan-2018. [Online]. Available: https://capstone.engineering.ucsb.edu/projects/dantonio-and-oono-labs-sampler-UAS. [Accessed: 02-Dec-2019].	
-%    [9] “DJI - The World Leader in Camera Drones/Quadcopters for Aerial Photography,” DJI Official. [Online]. Available: https://www.dji.com/matrice100/info. [Accessed: 06-Dec-2019].
-%    [10] “M100 User Manual EN,” Mar-2016. [Online]. Available: https://dl.djicdn.com/downloads/m100/M100_User_Manual_EN.pdf. [Accessed: 06-Dec-2019].
-%    [11] Drones Made Easy - San Diego's Drone Shop, “Matrice 100 Quadcopter,” Drones Made Easy. [Online]. Available: https://www.dronesmadeeasy.com/Matrice-100-Quadcopter-p/dji_matrice_100.htm. [Accessed: 06-Dec-2019].
-%    [12] “WingtraOne surveying and mapping drone for high accuracy over large areas,” Wingtra. [Online]. Available: https://wingtra.com/mapping-drone-wingtraone/. [Accessed: 06-Dec-2019].
-%    [13] “Zenmuse X3 - Creativity Unleashed,” DJI Official. [Online]. Available: https://www.dji.com/zenmuse-x3. [Accessed: 06-Dec-2019].
-%    [14] M. Z. Donahue, “A New Generation of Interplanetary Rovers Is Crawling Toward the Stars,” Smithsonian.com, 22-Mar-2017. [Online]. Available: https://www.smithsonianmag.com/science-nature/new-generation-interplanetary-rovers-crawling-toward-stars-180962625/. [Accessed: 06-Dec-2019].
-%    [15] “International Standards and Testing Applicable to Batteries,” International Battery Standards. [Online]. Available: https://www.mpoweruk.com/standards.htm#lithium. [Accessed: 06-Dec-2019].
-%    [16] “Worm drive,” Wikipedia, 14-Oct-2019. [Online]. Available: https://en.wikipedia.org/wiki/Worm_drive. [Accessed: 06-Dec-2019].
-%    [17] “Mbed Schematics.” [Online]. Available: https://os.mbed.com/media/uploads/chris/mbed-005.1.pdf. [Accessed: 06-Dec-2019].
-%    [18] Jamie Hyneman Hacks a Drone. Youtube, 2017.
-%    [19] “Parrot Bebop 2,” Parrot Store Official, 16-May-2019. [Online]. Available: https://www.parrot.com/us/drones/parrot-bebop-2. [Accessed: 06-Dec-2019].
-%    [20]  B. Czech 1960, P. R. Krausman 1946 and Center for American Places, The Endangered Species Act: History, Conservation Biology, and Public Policy. Baltimore: Johns Hopkins University Press, 2001.
-%    [21] Ren, Jinrui (11/01/2019). "Reliable Docking Control Scheme for Probe–Drogue Refueling". Journal of guidance, control, and dynamics (0731-5090), 42 (11), p. 2511.
-%    [22] “Cigar Cutters - Get the Best Cigar Cutter: Famous Smoke,” Famous Smoke Shop. [Online]. Available: https://www.famous-smoke.com/accessories/cigar-cutters. [Accessed: 09-Dec-2019].
+\bibliography{biosteve.bib}
 
 \end{document}
-%
