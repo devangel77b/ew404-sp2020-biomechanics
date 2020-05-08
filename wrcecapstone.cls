@@ -18,6 +18,8 @@
 \usepackage{url}
 
 % other stuff
+\newcommand{\@student}{Alyssa P Hacker}
+\newcommand{\student}[1]{\renewcommand{\@student}{#1}}
 \newcommand{\@advisor}{Title First Last}
 \newcommand{\advisor}[1]{\renewcommand{\@advisor}{#1}}
 \newcommand{\@departmentchair}{Title First Last}
@@ -34,12 +36,12 @@
 \hspace{0pt}
 \vfill
 \begin{center}
-\noindent{\LARGE \textbf{\@title}}\\
+\noindent{\LARGE \textbf{\@title}\par}
 \hrule
 \vspace{3em}
 by\\
 \vspace{3em}
-\@author\\
+\@student\\
 \includegraphics[width=4in]{RCE-logo-01.png}\\
 \emph{A Capstone Project Report Submitted to the Faculty of}\\
 \emph{\@department}\\
@@ -66,7 +68,7 @@ Outside Sponsor: \@outsidesponsor \\
 \newcommand{\contactinfo}[1]{\renewcommand{\@contactinfo}{#1}\def\hascontactinfo{1}}
 
 \renewcommand{\maketitle}{%
-\noindent{\LARGE \textbf{\@title}}\\
+\noindent{\LARGE \textbf{\@title}\par}
 \vspace{1em}
 \hrule
 \vspace{1em}
