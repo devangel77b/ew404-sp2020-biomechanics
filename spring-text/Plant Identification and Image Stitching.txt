@@ -1,0 +1,52 @@
+﻿Plant Identification and Image Stitching
+
+
+
+
+Plant Identification
+
+
+        Plant Identification is identifying plants with the survey drone using premade software. This was a low priority element of our CAPSTONE, but the research was important in case future groups wanted to implement it into their design. 
+
+
+Softwares and Methods:
+
+
+* PlantId
+   * Free software 
+   * Requires an upload of 5 plants weekly to maintain subscription
+   * Seems to only work on image uploads and some plants may require multiple images of the same plant for proper identification
+   * Would be difficult to implement into our system.
+* Convolutional Neural Networks
+   * This is basically deep learning for computer imaging. To a computer, an image is just a large matrix of RGB values, and it is possible to train a computer to recognize these RGB values and create a probability of what the image is about.
+   * The process begins with neurons and weight. Each neuron can be thought of as a feature filter and uses small pixel sections of the entire image to determine what feature that pixel section represents.
+   * Each pixel section uses its filter to output a number and these new numbers now can be used to determine higher level features, they now act as neurons going through a new filter. This can be visualized as a neural network. 
+   * This process must be trained by using many different images. Each time the CNN is trained it alters the weights of its filter choices in order to improve its classification. This training process is what makes a CNN considered a deep learning algorithm. 
+   * Further details of CNNs can be found in this link https://adeshpande3.github.io/A-Beginner%27s-Guide-To-Understanding-Convolutional-Neural-Networks/
+   * Image taken from link above to explain CNNs.
+  
+
+
+
+* iNaturalist
+   * This software is similar to PlantId, but it is used for all animal life.
+   * The identification does not come from code but from crowdsourcing done by experts in order to identify a specimen.
+   * Images or Video taken from the survey drone can be uploaded to the iNaturalist website and await results from experts there.
+
+
+Image Stitching
+
+
+The vision for image stitching is to use images taken by the survey drone to recreate a map of the survey area. 
+
+
+The following images and code were taken from MATLAB to provide an example on panoramic image stitching. In this folder contain two codes: ImageStitch.m, my code, and FeatureBasedPanoramicImageStitching.m, code taken from MATLAB. ImageStitch is code I created in order to replicate MATLAB’s code for testing my own images taken from my room. After hours spent trying to fix it, there are still some problems that I cannot figure out. The problem seems to stem from the image format and pixel size, and I cannot figure out why the images are rotated 90 degrees when imported into MATLAB.
+
+
+Figure 1 and 2 show the result of running MATLAB’s code using their source images. It works extremely well and figuring out image formatting and more time with this code can mean creating image stitched maps of our own for the survey mission.
+  
+
+Figure 1: Five Images of a Building
+  
+
+Figure 2: The Images Connected through Feature Based Panoramic Image Stitching

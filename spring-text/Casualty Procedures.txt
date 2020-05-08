@@ -1,0 +1,70 @@
+﻿BOAT OPERATION AND DRONE CASUALTY PROCEDURES
+
+
+Safety Measures:
+
+
+1. No Leaning over the boat. 
+2. No Limbs outside of the boat. 
+3. Wear PFD at all times.
+
+
+Man Overboard (owner: Kang):
+
+
+1. Locate the man overboard and approach slowly. 
+2. When getting closer to the victim, shift engines to neutral and keep the propellers away from the victim. 
+3. Stop and turn off the engines and proceed to make contact with the individual. 
+4. Check the person for injuries and throw a personal floatation device to the person in the water.
+
+
+Drone in the water (owner: Kang):
+
+
+1. Locate drone and approach expeditiously in case the drone sinks. 
+2. When getting closer, shift engines to neutral and grab the drone out of the water. 
+3. Another member must hold the shirt of anyone performing a task requiring a member to reach outside the boat to prevent man overboards.
+
+
+Abandon ship (owner: Kang):
+
+
+Loss of Engine, Control. Call Channel Islands National Park: (805) 658-5730. Contact USCG: VHF-FM Channel 16 (156.8 MHz), dial 911 (There is a USCG Unit in Santa Barbara). In the case of no cell signal, use paddles on boats to go towards the large islands where there is cell service. Confirm what boat we are using and if they provide paddles.
+
+
+Loss of telemetry (owner: Kang):
+
+
+A loss of telemetry on the Extraction Drone will make us unable to complete the extractino mission. Immediately return Drone to ship and recharge batteries while Kang, Ji, and Lim work on troubleshooting the telemetry. Telemetry will be done through an Mbed and all three members have experience with that microcontroller.
+
+
+Loss of FPV (Phan, Lim):
+
+
+IN THE EVENT PILOT HAS LOST GPS SIGNAL AND CAMERA SIGNAL:
+1. Alert all personnel that pilot has lost aircraft signal
+2. If aircraft is in Field of View and has auto landed at current location, pinpoint and record location for aircraft recovery if recoverable
+3. If aircraft is in Field of View and is still operable by remote controller, maneuver aircraft towards the home point IMMEDIATELY
+4. PROCEED TO RECOVERY PROCEDURE
+Loss of drone control (Phan, Lim):
+
+
+IN THE EVENT PILOT HAS LOST GPS SIGNAL AND CAMERA SIGNAL:
+1. Alert all personnel that pilot has lost aircraft signal
+2. If aircraft is in Field of View and has auto landed at current location, pinpoint and record location for aircraft recovery if recoverable
+3. If aircraft is in Field of View and is still operable by remote controller, maneuver aircraft towards the home point IMMEDIATELY
+4. PROCEED TO RECOVERY PROCEDURE
+
+
+Drone crash on deck or land (owner: Phan, Lim):
+
+
+Battery fire (owner: Phan, Lim):
+Class D fire, needs a specific estingisher to put out. Reccomended from XXX authority is to XXX.
+
+
+Additional Information
+
+
+There is no public WiFi available at this time on the islands or at the mainland visitor center in Ventura. Cell service is available on the mainland including at the visitor center in Ventura. On the islands, cell service is spotty and should not be relied upon. This means most of the time visitors to the islands will not have cell service. In an emergency, locate park or concessioner staff.
+https://www.nps.gov/chis/planyourvisit/basicinfo.htm

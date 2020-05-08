@@ -1,0 +1,258 @@
+﻿START OF DAY CHECKLIST
+
+
+Firmware update
+
+
+1. Ensure firmware is updated to the latest version
+Battery charging
+
+
+1. Ensure LiPo Battery are supervised at ALL times when charging
+2. Look out for any puffing or inflating of battery in any state (charging or when stored)
+3. Make sure tablet is fully charged and supervised when charging
+Inventory Check
+
+
+1. Make sure all all components of aircraft are in the aircraft case
+2. Make sure extraction device is properly stored 
+
+
+Go - No Go Checklist
+
+
+Requirement to proceed: Must go through every item in above checklist
+
+
+Weather
+
+
+Go: 
+1. Clear skies
+2. Calm waters
+3. Low precipitation
+4. Low wind speeds (<22 m/s)
+No Go: 
+1. Any indication of rain, fog, thunderstorms
+2. High wind speeds (>22 m/s)
+3. Heavy waves
+
+
+Equipment Status
+
+
+Go: 
+1. Frame- Check for no damage
+2. Screw check- Ensure tightness (frame, standoffs, motors, camera)
+3. Wire check- Ensure no damage (fraying, disconnections, etc)
+4. Ensure gimbal is mounted correctly and tightly
+5. Ensure extraction device is mounted correctly and tightly (when applicable)
+6. Connection between tablet and aircraft are securely established
+No Go: 
+1. Any damage found on frame 
+2. Loose screws
+3. Disconnected or exposed wires 
+4. Gimbal not securely attached
+5. Extraction device is loose and susceptible to hitting propellers
+6. Unable to connect to aircraft through tablet
+7. Lag or spotty response from remote controller or tablet
+
+
+Requirement to proceed: Must go through every item in above checklist
+
+
+DJI MATRICE 100 PREFLIGHT CHECKLIST 
+
+
+Note: GPS Mode assumed
+
+
+Walk Around
+1. Frame- Check for damage
+2. Screw check- Ensure tightness (frame, standoffs, motors, camera)
+3. Wire check- Ensure no damage (fraying, disconnections, etc)
+4. Ensure gimbal is mounted correctly and tightly
+5. Ensure extraction device is mounted correctly and tightly (when applicable)
+
+
+Before Start
+
+
+1. Verify all batteries are full
+   1. Verified by pressing power button once
+   2. Full battery status if, all four bars are lit 
+   3. If all lights are lit, charge battery if possible
+2. Select battery and attach (Do not connect to JST)
+3. Attach propellers- Ensure correct rotation, screw check
+  
+
+4. Attach propeller guards onto aircraft
+5. Ensure remote controller is on with sticks centered
+
+
+Starting
+
+
+1. Communicate that you will be powering on- Deconflict if needed
+2. Connect battery to battery compartment
+3. Power on for battery by pressing power button once and then pressing power button until all bars are lit
+4. IMMEDIATELY place on flat surface
+5. Connect tablet to remote controller via cable
+6. Connect tablet to aircraft via wifi
+7. Verify video feed on RS Go app, verify gimbal full range of motion and quality of video feed
+8. Establish that Front LEDs, Rear LEDs, and Aircraft Status Indicator are working and lights are indicating that the aircraft is operable:
+          
+          
+9. DO NOT PROCEED IF WARNING LIGHTS ARE FLASHING
+10. Refer to Aircraft Status Indicator Description chart and resolve issues if applicable. If unresolvable do not operate Matrice until error/warning is resolved. 
+11. Ensure extraction device is powered on and operable (when applicable)
+12. Prop areas- clear 
+
+
+Calibrating Compass Procedure
+ 
+WARNING: 
+1. DO NOT Calibrate compass where there is a chance of strong magnetic interference, such as magnetite quarries, parking structures, and underground steel reinforcements
+2. DO NOT carry ferromagnetic objects such as keys with you during calibration
+3. DO NOT calibrate besides massive metal objects
+4. DO NOT calibrate in an indoor space
+
+
+Proceed once pilot has read through warning section:
+1. Choose an open space to carry out the procedures
+2. Ensure the compass is calibrated. If you did not calibrate the compass as part of your pre-flight preparations, or if you have moved to a new location since the last calibration, tap the System Status bar in the app and select Calibrate, then follow the on-screen instructions to calibrate the aircraft step-by-step
+3. Hold the aircraft horizontally, and rotate it 360 degrees along the central axis. The Aircraft Status Indicator will emit a solid green light
+4. Hold the aircraft vertically with its nose pointing downwards, and rotate it 360 degrees around its central axis 
+5. Recalibrate the compass if the Aircraft Status Indicator becomes solid red
+6. If the Aircraft Status Indicator flashes red and yellow alternatively after compass calibration, move your aircraft to a different location to carry out the calibration
+
+
+ALWAYS RECALIBRATE if:
+
+
+1. The compass data is abnormal, and the Aircraft Status Indicator is flashing red and yellow alternatively 
+2. Flying in a new location, or a location that is different from your last flight
+3. The mechanical structure of the Matrice 100 is changed, i.e. the mounting position of the GPS module is changed. 
+4. Severe drifting occurs in flight, i.e. Matrice 100 has difficulty flying in a straight line. 
+
+
+  
+
+
+
+Motor Runup
+
+
+1. Perform Combination Stick Command (CSC) to start/stop the motors. Ensure that you perform the CSC in one continuous motion
+  
+
+
+
+2. Perform CSC Command. The motors will begin to speed at an idle speed, with the aircraft remaining stationary. 
+3. With motors spinning, verify correct rotation
+4. At idle, control test (“control surfaces”)- Pitch, roll, yaw
+5. Throttle- test to verify response, but do not take off 
+6. TO STOP MOTORS: There are two methods:
+   1. Method 1: When the Matrice 100 has landed, push the throttle stick stick down, then perform the CSC command to stop the motors. Release both sticks once the motors have stopped
+   2. Method 2: When the aircraft has landed, push the throttle down and hold. The motors will stop after a few seconds. 
+  
+
+7. DO NOT perform the CSC command when the aircraft is in mid-air. 
+
+
+Before Takeoff
+
+
+1. Clear- ensure takeoff area is clear
+2. Talk- verbally alert other pilots that you are taking off, and state immediate intentions
+
+
+
+
+Takeoff/Landing Procedures
+
+
+WARNING: 
+1. When the Aircraft Status Indicator flashes yellow rapidly during flight, the aircraft has entered Failsafe mode
+2. The Aircraft Status Indicator will flash red slowly for a Low Battery Level Warning, and flash red rapidly for a Critically Low Battery Level Warning during flight
+3. AIRCRAFT WILL LAND AUTOMATICALLY WHEREVER IT IS WHEN REACHING CRITICALLY LOW BATTERY LEVEL WARNING DURING FLIGHT
+4. Recover Aircraft back to home point IMMEDIATELY when Return to Home Status or Low Battery Level Warning is indicated on mobile device or tablet
+5. Do not use aircraft in adverse weather conditions including raining, snowing, fog, and wind speeds exceeding (10 m/s)
+6. Only fly in open areas. Tall buildings and steel structures may affect accuracy of the compass and the GPS signal
+7. Avoid flying near obstacles, crowds, high voltage power lines, trees and bodies of water. 
+8. Avoid flying in area with high levels of electromagnetism
+9. Aircraft and battery performance is subject to environmental factors such as air density and temperature
+10. Matrice 100 cannot operate in P-Mode within the Earth’s polar region
+
+
+IN THE EVENT PILOT HAS LOST GPS SIGNAL AND CAMERA SIGNAL:
+1. Alert all personnel that pilot has lost aircraft signal
+2. If aircraft is in Field of View and has auto landed at current location, pinpoint and record location for aircraft recovery if recoverable
+3. If aircraft is in Field of View and is still operable by remote controller, maneuver aircraft towards the home point IMMEDIATELY
+4. PROCEED TO RECOVERY PROCEDURE
+
+
+Proceed once pilot has read and is aware of above warning section:
+
+
+11. If applicable, place the aircraft on an open, flat ground with the battery indicator facing you
+12. Power on the remote controller and your mobile device, then the Intelligent Flight Battery
+13. Launch the DJI GO or RS GO app and enter Camera View
+14. Wait until the Aircraft Status Indicator flashes green. This means the Home Point is recorded and is safe to fly. If it flashes yellow, the Home Point has not been recorded and you should not take off
+15. Push the throttle stick up slowly to take of or use Auto Takeoff
+16. Too land, hover over a level surface and gently pull down on the throttle stick to descend slowly
+17. After landing, execute the CSC command or push the throttle stick down for 3 seconds until the motors come to a stop
+18. Turn off the Intelligent Flight Battery followed by the remote controller
+ 
+Recovery Procedure for Boat Operation (if applicable):
+
+
+WARNING: IN THE EVENT OF CASUALTY DURING RECOVERY PROCEDURE, FOLLOW CASUALTY PROCEDURE IMMEDIATELY. DO NOT PROCEED RECOVERY PROCEDURE
+
+
+1. Ensure that recovery personnel are strapped with protection gear and standing by at the landing region for recovery. DO NOT proceed if recovery personnel are not ready.
+2. Ensure desired landing region is clear of any debris and the person recovering is secured and has given verbal communication to begin recovery
+3. Maneuver aircraft so that aircraft is right above landing platform 
+4. Adjust gimbal so that camera view is directly on top of recovering personnel and make verbal communication that camera view is centered on landing personnel
+5. Announce that you are landing the aircraft to personnel
+6. Ensure that personnel are always keeping an eye on the aircraft and must give verbal feedback on aircraft positioning while landing
+7. Slowly lower throttle and lower aircraft unless otherwise instructed by recovery personnel
+8. Once recovery personnel has secure grip of the aircraft and has given verbal communication that aircraft is secured, IMMEDIATELY perform CSC command to stop motors
+  
+
+9. Turn off Flight Battery and remote controller
+
+
+DJI Matrice 100 Post-flight checklist
+
+
+Note: GPS Mode assumed
+
+
+Walk Around
+1. Frame- Check for damage 
+2. Screw check- Ensure tightness (frame, standoffs, motors, camera)
+3. Wire check- Ensure no damage (fraying, disconnections, etc)
+4. Ensure gimbal is not damaged and still operating
+5. Ensure extraction device is intact and secured
+6. Make sure battery is still working and at operable temperature
+
+
+Securing the sample
+1. Make sure there is no sharp protruding parts from the extraction device
+2. Carefully unlatch sample vessel containing the sample
+3. Confirm if sample is the right sample collected and of sufficient size
+
+
+In the event of more flights
+1. Go through DJI Matrice 100 Pre-flight checklist
+2. Ensure extraction device is reset and ready
+3. Ensure fully charged battery is used at operable temperature
+
+
+Disassembly
+1. Ensure the DJI Matrice, controller, and tablet are all turned off
+2. Take off propellers and prop guards 
+3. Unscrew extraction device from aircraft
+4. Unscrew gimbal mount and camera
+5. Secure the aircraft components into case

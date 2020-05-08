@@ -1,0 +1,10 @@
+﻿The DJI flight simulator is available for free using the free trial version which provides an adequate number of drones to fly, however, the DJI Matrice 100 was not available to fly. There are different modes to fly the drone in and the controls can be customized to mimic the remote controller for DJI Matrice 100. You are able to control the drone with the keyboard as well if you don’t have the controller on hand. 
+
+
+Flying the DJI Inspire 1, which was the largest and most similar drone to the Matrice 100, we observed that the flight simulator is very helpful when first flying the drone. The pilot can fly the drone in free fly or do training courses to get used to the controls and become an expert in maneuvering the drone. The dynamics and handling of the DJI drones available are all similar to the DJI Matrice 100, so there’s no surprise for the pilot when he or she flies the actual drone outside. 
+
+
+Although there are only limited versions available to fly the drone in for the free trial, it is possible to simulate the plant recovery mission from start to end. The only available environment in the free fly mode is in a flat land with mountains around which could act as the cliffs on the San Clemente Islands. 
+
+
+When using the flight simulator it is advised to use a 64-bit Windows 10 with a GeForce GTX 1060 Graphics Card. For the standard issued HP laptop, we lowered the graphics to low, and image quality to lowest settings, however, the simulator was still choppy and very delayed in response to controls. It is advisable to have a laptop capable of running the DJI flight simulator without having lag and a gaming laptop should be adequate.

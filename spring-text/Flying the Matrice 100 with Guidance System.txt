@@ -1,0 +1,24 @@
+﻿The DJI Matrice 100 equipment had an attachable guidance system which has optic flow ultrasound sensors. This guidance system has the main central unit along with the frame surrounding it so that the four usable sensors can be adjusted in position for whichever direction you want to avoid colliding in. We worked on configuring the drone setup if it was to fly with the guidance system along and still have space to attach the extraction arm and end effect. The configuration was valid, however, there were some issues that arose after configuring the drone. The guidance system must be powered from the drone by using the XT60 power adapter cord, however, the length of the XT60 power cord was not long enough to reach the power outlet that connects to the drone and the power inlet for the guidance system. 
+
+
+As seen in the pictures, one sensor was attached below the drone while the other three sensors were attached to the main frame of the guidance system up top. The reason for this configuration was because during the sample recovery mission, the drone needs to stay stable when hovering. The guidance system is able to detect velocity between 0-16 m/s and has an accuracy of 0.04 m/s velocity detection (2m above the ground). The sensors’ effective range is between 0.20 m to 20m. Because the effective range is up to 65 feet. The bottom sensor can track how the drone is moving based on what’s below the drone whether it is a sloped ground or the ocean next to the cliff. 
+
+
+The guidance system can prove to be very helpful in the mission because stability of the drone during the sample recovery mission was one of the main issues the mission was difficult. If the drone is able to stabilize at an altitude high enough where there sensors are still effective, the drone may be stable enough where the drone pilot doesn’t have to worry about stabilizing the drone when hovering in close proximity of the plant. This also has the potential to change the way the extraction device is designed in which the extraction device might not need to be countering the drone’s movement while hovering, but rather just able to focus on grabbing the plant and securing the plant sample. 
+
+
+  
+
+Figure 1: Specifications of the guidance system 
+  
+
+Figure 2: DJI Matrice 100 with guidance system attached on top
+  
+
+Figure 3: Back view of DJI Matrice with Guidance System
+  
+
+Figure 4: Bottom View of Matrice 100 with bottom sensor attached
+  
+
+Figure 5: XT60 power adapter cord needed to power guidance system. Cord length must be longer.

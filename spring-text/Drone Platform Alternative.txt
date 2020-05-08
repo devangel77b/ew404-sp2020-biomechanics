@@ -1,0 +1,10 @@
+﻿Different potential platform:
+
+
+With the main problems of the DJI Matrice 100 being the fragile balance between payload and ample flight time, it is recommended that an alternative is a drone that is capable to flying up to 45 minutes or more with payload attached to the drone. The following platforms that are larger than the DJI Matrice 100 are listed below:
+
+
+DJI Matrice 210 RTK V2: The Matrice 210 RTK V2 is a new model that DJI has released but is still not out in the market currently. It is a quadcopter that operates with two TB55 batteries. The max payload the drone can carry is 1.34 kg (~3 lbs). Although the battery life is longer than the DJI matrice 100, it is still relatively short with a max flight time of 24 minutes with max payload and 34 minutes without payload. The drone has an ultrasonic sensor for hovering accuracy that operates from 0.33 to 16.4 ft. 
+
+
+DJI Matrice 600 Pro: The DJI Matrice 600 Pro is a six propeller drone that is widely used as the platform for large scale missions such as farming lands. With six TB48S batteries, the Matrice 600 is capable of flying with a 5.5 kg payload for 18 minutes and can fly without a payload for 38 minutes.
