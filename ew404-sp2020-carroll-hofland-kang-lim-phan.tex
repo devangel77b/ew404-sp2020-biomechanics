@@ -2,6 +2,12 @@
 
 % Known issues:
 % Does not incorporate Dr Allison Webster Giddings comments from end of EW401
+% No tool for scaling range endurance payload
+% No consideration of tradeoffs of sensor resolution, speed, altitude, range
+% Machine vision afterthought, no serious use of CNNs to detect plants, not even hello world
+% No refs in post Covid text at all
+% Operating procedures did not look at Duke Marine Lab UAS procedures
+% Did not simulate Matrice ever
 
 \usepackage[separate-uncertainty=true,multi-part-units=single]{siunitx}
 \DeclareSIUnit{\year}{y}
@@ -892,18 +898,26 @@ Jisub performed better as the UAS pilot than Bryan. The UAS lands automatically 
 
 
 
+\input{spring-addendum.tex}
+\input{spring-fixedwing.tex}
+\input{spring-vision.tex}
+\input{spring-alternativequads.tex}
+\input{spring-hoveringcontrol.tex}
+\input{spring-robotarmmechanical.tex}
+\input{spring-robotarm}
 
 \nocite{hyneman2017jamie, famoussmoke2019cigar} % never used? 
 %\section{References}
 \bibliography{biosteve.bib}
 
 
-
-
-
 % Appendices here (optional)
-%\clearpage
-%\appendix
-%\renewcommand{\figurename}{Supplementary Figure}
-%\renewcommand{\thefigure}{S\arabic{figure}}
+\clearpage
+\appendix
+\renewcommand{\figurename}{Supplementary Figure}
+\renewcommand{\thefigure}{S\arabic{figure}}
+\input{app-op.tex}
+\input{app-cp.tex}
+\input{app-matlab.tex}
+\input{app-mbed.tex}
 \end{document}
