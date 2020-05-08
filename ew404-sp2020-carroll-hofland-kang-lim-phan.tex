@@ -23,6 +23,30 @@
   basicstyle=\ttfamily,
   columns=fullflexible,
   showstringspaces=false}
+\lstdefinestyle{mbedC}{
+	language=C,
+	basicstyle=\ttfamily,
+	keywordstyle=\color{blue}\ttfamily,
+	stringstyle=\color{magenta}\ttfamily,
+	commentstyle=\color{green}\ttfamily,
+	directivestyle=\color{red}\ttfamily,
+ 	morecomment=[l][\color{red}]{\#},
+	columns=fullflexible,
+	showstringspaces=false,
+%	frame=single
+}
+\lstdefinestyle{usnaMatlab}{
+	basicstyle=\ttfamily,
+	keywordstyle=\color{blue}\ttfamily,
+	stringstyle=\color{magenta}\ttfamily,
+	commentstyle=\color{green}\ttfamily,
+ 	morecomment=[l][\color{red}]{\#},
+	columns=fullflexible,
+	showstringspaces=false,
+	language=Matlab
+%	%backgroundcolor=\color{lightgray},
+%	frame=single
+}
 %\usepackage[dvipsnames,svgnames]{xcolor} % partially covered in WRCE capstone
 %\usepackage{hyperref} % covered in WRCE capstone
 %\hypersetup{%
@@ -77,10 +101,16 @@ Our team interviewed Dr. Guilliams through a phone call on \printdate{9/11/2019}
 
 There are many laws that govern the use of UASs, and also the accessibility of the channel islands.  FAA laws govern the piloting of unmanned vehicles.  There may be a license that we need in order to operate the UAS on behalf of the botanical garden.  The islands are also protected areas, therefore going to retrieve the UAS (if it were to crash) may become complicated.  One island is owned privately, two are owned by the Navy, and the rest are operated by the national parks service.  Each island has its own specific rules when it comes to human contact.
 \begin{figure}
+\begin{center}
+\includegraphics[width=0.8\columnwidth]{figures/fig1-malva.png}
+\end{center}
 \caption{Picture of \Malva\ genus plant \cite{wikipedia2019malva}.}
 \label{fig:1.1.1}
 \end{figure}
 \begin{figure}
+\begin{center}
+\includegraphics[width=0.6\columnwidth]{figures/fig2-dudleya.png}
+\end{center}
 \caption{Illustration of \Dudleyanesiotica\ plant \cite{jeps2019dudleya}.}
 \label{fig:1.1.2}
 \end{figure}
@@ -95,11 +125,17 @@ We hope to develop innovative methods in the fields of surveying, identification
 
 We looked at the history of air and water temperatures for the environment surrounding the Channel Islands over the past five years during the month of March, our intended operational period. The average air temperature in March has a high of \SI{65}{\fahrenheit} and a low of \SI{49}{\fahrenheit} \cite{accuweather2019channel}. The average water temperature has a high of \SI{58.8}{\fahrenheit} and a low of \SI{53.6}{\fahrenheit} \cite{accuweather2019channel}. In the case where a human person is thrown off the Rigid Hull Inflatable Boat (RHIB) and into the water we have \SIrange{1}{2}{\hour} to rescue them before they develop hypothermia in water conditions from \SIrange{50}{60}{\fahrenheit}. Fog is a common weather feature, especially at San Miguel and Santa Rosa Islands \cite{nps2019weather}. Fog is most common in spring and summer, and west of the Santa Cruz Channel \cite{nps2019weather}. The marine layer fog flows down the coast with the prevailing NW wind, and bends around Point Conception, usually blanketing San Miguel and Santa Rosa, and often the western portion of Santa Cruz Island \cite{nps2019weather}. Fog frequently is thicker and lingers longer into the day offshore than along the mainland coast \cite{nps2019weather}. Preliminary data from Santa Cruz Island suggests that geographic variation in the presence and duration of the fog layer has a profound influence on the temperature and humidity regimes \cite{nps2019weather}. Furthermore, the island chain itself has eight major islands with the largest having an area of \SI{96.51}{\mile\squared} \cite{nps2019weather}. 
 \begin{figure}
+\begin{center}
+\includegraphics[width=0.8\columnwidth]{figures/fig3-channel.png}
+\end{center}
 \caption{Aerial Image of the Channel Islands. The larger islands form a National Park which hold many endemic and endangered species of plants \cite{nps2019webpage}.}
 \label{fig:1.2.1}
 \end{figure}
 
 \begin{figure}
+\begin{center}
+\includegraphics[width=0.8\columnwidth]{figures/fig4-map.png}
+\end{center}
 \caption{Map of the Channel Islands National Park located 30 miles South of the Santa Barbara Coast \cite{nps2019submerged}.}
 \label{fig:1.2.2}
 \end{figure}
@@ -115,6 +151,9 @@ Our goal is to support the research of Dr. Matthew Guilliams, plant systematist 
 
 \subsection{Functions}
 \begin{figure}
+\begin{center}
+\includegraphics[width=\columnwidth]{figures/fig5-function-tree.png}
+\end{center}
 \caption{Function Means Tree of the System}
 \label{fig:2.2.1}
 \end{figure}
@@ -128,6 +167,17 @@ The landing platform for the UAS operations will be conducted from a RHIB. There
 \begin{table}
 \caption{Objective Table split into two portions: mobility and extraction. Objectives for Mobility portion: Part of the system that makes the plant accessible}
 \label{tab:2.4.1}
+\begin{center}
+%\includegraphics[width=\columnwidth]{figures/table-241.jpg}
+\begin{tabular}{p{0.5\columnwidth}p{0.5\columnwidth}}
+\toprule
+Objectives for Mobility portion: Part of the system that makes the plant accessible &% 
+The system can fly, hover, or swim so it can reach the target plant. The system must be able to withstand variable wind speeds or sea states while flying, hovering, or swimming. After extraction, the system must be able to function normally and safely bring back the sample. \\
+Objectives for Sampler portion: Part of the system that can actively extract the plant sample &%
+The extraction subsystem must have enough robustness and degrees of freedom to extract both the \Dudleya, a low hanging succulent, and the \Malvaassurgentiflora, a flower plant. The UAS must minimally impact the surrounding environment, and precisely cut off the desired sample from the rest of the plant so as to cause minimal harm to the plant. The extraction subsystem must hold and preserve the sample until returning to the boat. \\
+\bottomrule
+\end{tabular}
+\end{center}
 \end{table}
 
 The system can fly, hover, or swim so it can reach the target plant. The system must be able to withstand variable wind speeds or sea states while flying, hovering, or swimming. After extraction, the system must be able to function normally and safely bring back the sample.
@@ -137,6 +187,9 @@ The extraction subsystem must have enough robustness and degrees of freedom to e
 \begin{table}
 \caption{Pairwise Comparison Chart: each metric was compared to the other metrics to determine weights of each metric based on importance to the system.}
 \label{tab:2.4.2}
+\begin{center}
+\includegraphics[width=\columnwidth]{figures/table-242.png}
+\end{center}
 \end{table}
 
 
@@ -146,18 +199,30 @@ Our team developed four metrics to accurately evaluate our design. The metrics a
 \begin{table}
 \caption{Operating Time Metrics Table}
 \label{tab:2.5.1}
+\begin{center}
+\includegraphics[width=\columnwidth]{figures/table-251.jpg}
+\end{center}
 \end{table}
 \begin{table}
 \caption{Reliability of Extraction Metrics Table}
 \label{tab:2.5.2}
+\begin{center}
+\includegraphics[width=\columnwidth]{figures/table-252.jpg}
+\end{center}
 \end{table}
 \begin{table}
 \caption{Total Required Payload Metrics Table}
 \label{tab:2.5.3}
+\begin{center}
+\includegraphics[width=\columnwidth]{figures/table-253.jpg}
+\end{center}
 \end{table}
 \begin{table}
 \caption{Tenacity Metrics Table}
 \label{tab:2.5.4}
+\begin{center}
+\includegraphics[width=\columnwidth]{figures/table-254.jpg}
+\end{center}
 \end{table} 
 
 
@@ -171,6 +236,9 @@ Ben Nyberg, a UAS operator with NTBG used his UAS to survey and gather footage o
 \begin{figure}
 \caption{Picture of Ben Nyberg, a UAS operator with NTBG, using a UAS for surveying \cite{mongabay2019hunting}.}
 \label{fig:3.1}
+\begin{center}
+\includegraphics[width=0.8\columnwidth]{figures/fig31-nyberg.png}
+\end{center}
 \end{figure}
 
 The difference with this design with regards to our mission is that the UAS does not collect samples of the plant and is only used as a means to survey the land. If a species is identified, a professional climber would be airlifted from a helicopter to manually collect the sample. Furthermore, the UAS pilot is able to operate on land where as in our project we will be confined in a RHIB. 
@@ -182,6 +250,9 @@ A capstone project of the Mechanical Engineering department of the University of
 \begin{figure}
 \caption{UCSB design for sampler UAS \cite{dantonio2018sampler}.}
 \label{fig:3.2}
+\begin{center}
+\includegraphics[width=0.8\columnwidth]{figures/fig32-ucsb.png}
+\end{center}
 \end{figure}
 
 Issues with this design with regards to our mission: Average flight time of \SI{7}{\minute}; Made to cut larger branches; The control of the UAS greatly affected the quality of the sample; Octocopter was used instead of a quadcopter.
@@ -193,6 +264,9 @@ The military uses a system called a probe-and-drogue which employs a hose from a
 \begin{figure}
 \caption{Picture of Airborne refueling probe basket \cite{ren2019reliable}}
 \label{fig:3.3}
+\begin{center}
+\includegraphics[width=0.8\columnwidth]{figures/fig33-refueling.png}
+\end{center}
 \end{figure}
 
 This type of design is helpful for the snipper/gripper design because this will help guide the plant into the hole where it can be cut and stored.  However, funneling a plant is different than guiding a fuelling probe.  The refuelling drogue is made to fly backwards while our fixture is facing into the direction of flight.  In our design we incorporated a cone-shaped mesh to help funnel a branch into the cutting zone.
@@ -206,6 +280,9 @@ When reviewing the customer requirements and overall objectives our team was abl
 \begin{table}
 \caption{Overall Morth Chart with all viable capabilities}
 \label{tab:4.1}
+\begin{center}
+\includegraphics[width=\columnwidth]{figures/table-41.png}
+\end{center}
 \end{table}
 
 
@@ -216,6 +293,11 @@ With the maximum winds of the Channel Islands in March being \SI{18}{\mph} this 
 
 The Matrice 100 has an estimated maximum payload of \SI{1.15}{\kilo\gram} for one battery excluding the weight of that battery. The maximum weight for two batteries needs to be tested given the extra battery weighs \SI{672}{\gram}. Currently we give the Matrice a  2/4 acceptable rating in our total required payload metric which includes extraction device, camera and plant sample. The Zenmuse X3 and gimbal’s weight is \SI{247}{\gram} giving our team the remander \SI{868}{\gram} to work with. We will release the Matrice, use the extraction system to collect a sample of the plant and return back to the RHIB successfully. The conceptual design of the extractors will be discussed later in this section.  
 \begin{figure}
+\begin{center}
+\includegraphics[height=1.3in]{figures/fig411a.png}
+\includegraphics[height=1.3in]{figures/fig411b.jpg}
+\includegraphics[height=1in]{figures/fig411c.png}
+\end{center}
 \caption{DJI Matrice 100, Prototype Drawing of Extraction Mechanism, and Zenmuse X3 Gimbal respectively \cite{dronesmadeeasy2019matrice, dji2019zenmuse}.}
 \label{fig:4.1.1}
 \end{figure}
@@ -226,6 +308,12 @@ The Matrice 100 has an estimated maximum payload of \SI{1.15}{\kilo\gram} for on
 The second concept that was evaluated was the Fixed-Wing Quadrotor Combo. The Fixed Wing UAS would be used for the initial steps of surveying the island to search and identify the respective plant species. On average the operating time of fixed wing aerial systems is \SI{45}{\minute} giving the Operating Time metric a 4/4. \SI{45}{\minute} gives sufficient time to troubleshoot complications if arise and complete the operation. The payload of the Fixed Wing UAS is not as important because there are usually built in cameras. Whereas the payload and overall specifications of the Quadcopter will be the same as in concept one. The Matrice 100  would be sent out to desired plant location for extraction due to its higher stability. The pros of incorporating the fixed wing UAS would be an estimated 50\% increase in operating time and potentially high video quality. The downside would be purchasing/acquiring a whole new system, learning how to use it and takeoff/landing procedures. We looked at the WingtraOne, a fixed wing UAS developed by Wingtra \cite{wingtra2019wingtraone}. The Wingtra has no listed price but camera offers a minimal ground sampling distance of \SI{0.7}{\centi\meter} and vertical take off and landing \cite{wingtra2019wingtraone}. 
 
 \begin{figure}
+\begin{center}
+\includegraphics[height=1in]{figures/fig421a.png}
+\includegraphics[height=1in]{figures/fig421b2.png}
+\includegraphics[height=0.2in]{figures/fig421b1.png}
+\includegraphics[height=0.8in]{figures/fig421c.jpg}
+\end{center}
 \caption{Fixed-wing UAS, DJI Matrice 100 with Zenmuse X3 Attached, and Prototype Drawing of Extraction Mechanism respectively  \cite{dronesmadeeasy2019matrice, wingtra2019wingtraone, dji2019zenmuse}}
 \label{fig:4.2.1}
 \end{figure}
@@ -237,6 +325,9 @@ The second concept that was evaluated was the Fixed-Wing Quadrotor Combo. The Fi
 \subsection{Concept 3:  Climbing Robot}
 Robot with Four Servo legs that is able to climb onto steep rocky cliffs and be able to extract plant sample through extraction device beneath the robot. The benefits of this design are its operating time, payload and tenacity. The robot itself needs to be transported onto the island via quadcopter. Because the robot is constricted to the ground and limited in movement its use for surveying the island to search and identify plants would be futile. Whereas recovering the plant would not be, given that a ground system does not need to adhere to the same physics as our air counterparts we will be able to attach a hefty payload and in turn maximise our operating time.  Cliff Climbing Robots are built with hook like claws to attach to rocky surfaces and potentially with anti-vibration and anti-wind loading. The robot will be able to withstand the highest winds speed of the channels island scoring highest in our tenacity metric. While  these ideas are great in theory, developing a whole robotic cliff climbing robot is beyond our capabilities  and level of experience. Furthermore, the system that delivers the UAS must provide a payload that can withstand the weight of the robot. 
 \begin{figure}
+\begin{center}
+\includegraphics[width=0.5\columnwidth]{figures/fig431.png}
+\end{center}
 \caption{NASA JPL Lemur 3 Climbing Robot \cite{donahue2017new}}
 \label{fig:4.3.1}
 \end{figure}
@@ -246,6 +337,9 @@ Robot with Four Servo legs that is able to climb onto steep rocky cliffs and be 
 \subsection{Concept 4: Cigar-Cutter Extraction Mechanism}
 This extraction system utilizes spring power over a cigar cutter to cut the plant. It is strategically placed behind a cone and before a clear tube so that once the spring mechanism is activated it will not only cut the plant but also trap it in the tube, securing the plant inside the tube for recovery. There will be a camera that points to the clear tube so that the UAS co-pilot will know when to activate spring loaded trap while the main UAS pilot can focus on positioning the UAS during the extraction process. This system is predicted to work 5/10 trials. This is not because the cutter will not cut through  the plant, but the limitation of if the plant does not go into the cone all the way and the spring is activated. Another limitation is that the cigar-cutter is one try method because the cigar cutter cannot be reset unless the UAS returns to the boat and physically reset by hand. 
 \begin{figure}
+\begin{center}
+\includegraphics[width=0.5\columnwidth]{figures/fig441.png}
+\end{center}
 \caption{Sample picture of cigar cutter used for design \cite{famoussmoke2019cigar}}
 \label{fig:4.4.1}
 \end{figure}
@@ -257,10 +351,16 @@ This extraction system utilizes spring power over a cigar cutter to cut the plan
 \subsection{Concept 5: Mythbuster Motorized Shear}
 Developed by Mythbusters host Jamie Hyneman, the motorized shear uses a high torque motor and a worm drive gear orientation to translate a motor’s single axis spin into planar rotational motion. The planar circular motion controls the end effector shears to repeatedly open and close at a comfortable speed. In the video, Jamie Hyneman demonstrates how powerful the shears are by easily cutting through thick branches, and then proceeds to attach the subsystem to his UAS. He flies the UAS to a bush and begins cutting branches off \cite{mbed2019}. This is exactly the kind of design that we envision.
 \begin{figure}
+\begin{center}
+\includegraphics[width=0.5\columnwidth]{figures/fig451.png}
+\end{center}
 \caption{Worm drive diagram that shows how axis rotation can be translated into rotational planar motion \cite{wikipedia2019wormdrive}.}
 \label{fig:4.5.1}
 \end{figure}
 \begin{figure}
+\begin{center}
+\includegraphics[width=0.4\columnwidth]{figures/fig452.png}
+\end{center}
 \caption{The end effector of the motorized shear \cite{mbed2019}.}
 \label{fig:4.5.2}
 \end{figure}
@@ -275,6 +375,9 @@ Developed by Mythbusters host Jamie Hyneman, the motorized shear uses a high tor
 \begin{table}
 \caption{Decision Matrix Chart}
 \label{tab:4.6.1}
+\begin{center}
+\includegraphics[width=\columnwidth]{figures/table-461.png}
+\end{center}
 \end{table}
 
 \Fref{tab:4.6.1} shows our analysis of comparing all three he designs. While the single quadcopter design scored the highest, the Fixed Wing UAS Survey with Quadcopter Extraction came in a close second. The only difference in the matrix of these is that the single UAS system is less complex and therefore has less room for failure. The Climbing Robot involves too many additional pieces needed such as a way to send out and retrieve the robot after a successful extraction. We speculate the Climbing Robot to be the most reliable in extraction, but operating a robot from afar on a boat seems much too difficult. Though the single quadcopter design won in terms of points on the decision matrix, our group has still not given up on the idea of a quadcopter and fixed wing project. During the first semester, we focused on the extraction and flying elements of the quadcopter because it is the quadcopter that will ultimately do the extraction. We plan to incorporate testing with a fixed wing UAS for survey purposes.
@@ -282,6 +385,9 @@ Developed by Mythbusters host Jamie Hyneman, the motorized shear uses a high tor
 \begin{figure}
 \caption{Functional Block Diagram of the DJI M100 with a Motorized End Effector}
 \label{fig:4.6.1}
+\begin{center}
+\includegraphics[width=\columnwidth]{figures/fig461.png}
+\end{center}
 \end{figure}
 
 
@@ -303,6 +409,9 @@ Our project inherently contained a lot of space restrictions, and the nature of 
 \begin{table}
 \caption{Lithium Battery Standards Table \cite{mpoweruk2019international}}
 \label{tab:6.1}
+\begin{center}
+\includegraphics[width=\columnwidth]{figures/table-61.jpg}
+\end{center}
 \end{table}
 
 Lithium Batteries are a staple in any operation involving UAS because of their high specific energy, extremely advantageous when weight is a constraint. There are numerous standards for lithium polymer battery training, safety, and use in aircraft operations. Our team completed lithium polymer battery training with Professor Evangelista.
@@ -320,11 +429,16 @@ The UAS system we chose to use was the DJI Matrice 100. In respect to our design
 \begin{table}
 \caption{Complete Parts List}
 \label{tab:7.2.1}
+\begin{center}
+\includegraphics[width=\columnwidth]{figures/table-721.jpg}
+\end{center}
 \end{table}
-
 \begin{table}
-\caption{Complete Budget List}
+\caption{Complete Budget List. Disclaimer: ``labor'' costs and person-day rates are solely for EW401 training purposes and do not reflect actual costs.}
 \label{tab:7.2.2}
+\begin{center}
+\includegraphics[width=\columnwidth]{figures/table-722.jpg}
+\end{center}
 \end{table}
 
 
@@ -334,6 +448,9 @@ The UAS system we chose to use was the DJI Matrice 100. In respect to our design
 \subsection{Mechanical Drawings}
 
 \begin{figure}
+\begin{center}
+\includegraphics[width=0.8\columnwidth]{figures/fig731.jpg}
+\end{center}
 \caption{A prototype drawing of the initial Pac-Man design for extraction}
 \label{fig:7.3.1}
 \end{figure}
@@ -341,54 +458,92 @@ Initially, a grabber system that resembled a video game character, Pac-Man, was 
 
 After some rumination, the Pac-Man design was altered in order to have less moving parts.  The second design looked more like the mouth of an eel.  Unlike the two moving hatches of the initial design, the new grabber system was designed with a fixed bottom jaw which would act like an anvil to the blade attached to the top jaw.  The top jaw would be snapped closed using tension from strong torsion springs similar to those found in a household mousetrap.
 \begin{figure}
+\begin{center}
+\includegraphics[width=0.6\columnwidth]{figures/fig732.png}
+\end{center}
 \caption{A rough sketch of the revised Pac-Man design}
 \label{fig:7.3.2}
 \end{figure}
 
 \begin{figure}
+\begin{center}
+\includegraphics[width=0.8\columnwidth]{figures/fig733.png}
+\end{center}
 \caption{A digital drawing of the new Pac-Man design}
 \label{fig:7.3.3}
 \end{figure}
 
 \begin{figure}
+\begin{center}
+\includegraphics[width=0.8\columnwidth]{figures/fig734.png}
+\end{center}
 \caption{Prototype sketch of revised pac man design with parts labelled}
 \label{fig:7.3.4}
 \end{figure}
 
 The location for the cutter system had to be outside of the rotor wash generated by the rotors that were closest to it.  Therefore, it was decided that the bar would extend about \SI{500}{\milli\meter} from the drone center (\fref{fig:7.3.5}). 
 \begin{figure}
+\begin{center}
+\includegraphics[width=\columnwidth]{figures/fig735.png}
+\end{center}
 \caption{Prototype drawing of complete pac man design}
 \label{fig:7.3.5}
 \end{figure}
  
 After discussing the Pac-Man design with the workers at the Machine Shop, it was decided that the 
 \begin{figure}
+\begin{center}
+\includegraphics[width=\columnwidth]{figures/fig736.png}
+\end{center}
 \caption{Initial prototype drawing of cigar cutter extraction mechanism with tube and cone}
 \label{fig:7.3.6}
 \end{figure}
 \begin{figure}
+\begin{center}
+\includegraphics[width=\columnwidth]{figures/fig737.png}
+\end{center}
 \caption{Additional prototype sketch with solenoid concept included in cigar cutter}
 \label{fig:7.3.7}
 \end{figure}
 \begin{figure}
+\begin{center}
+\includegraphics[width=0.49\columnwidth]{figures/fig738a.png}
+\includegraphics[width=0.49\columnwidth]{figures/fig738b.png}
+\end{center}
 \caption{More sketches of cigar cutter prototype with external power source for activation}
 \label{fig:7.3.8}
 \end{figure}
 \begin{figure}
+\begin{center}
+\includegraphics[width=\columnwidth]{figures/fig739.png}
+\end{center}
 \caption{Prototype sketch of final product prototyping}
 \label{fig:7.3.9}
 \end{figure}
 \begin{figure}
+\begin{center}
+\includegraphics[width=0.8\columnwidth]{figures/fig7310.png}
+\end{center}
 \caption{Additional sketch of final product prototyping}
 \label{fig:7.3.10}
 \end{figure}
 \begin{figure}
+\begin{center}
+\includegraphics[width=\columnwidth]{figures/fig7311.png}
+\end{center}
 \caption{Digital prototype design for cone and tube if there were to be a servo attached.}
 \label{fig:7.3.11}
 \end{figure}
 
+
+
+
+
 \subsection{Circuit Diagrams}
 \begin{figure}
+\begin{center}
+\includegraphics[width=0.6\columnwidth]{figures/fig741.png}
+\end{center}
 \caption{Basic Circuit Diagram of the Extraction Device}
 \label{fig:7.4.1}
 \end{figure}
@@ -397,6 +552,9 @@ After discussing the Pac-Man design with the workers at the Machine Shop, it was
 
 This circuit represents the extraction device at a prototype level. In the air, the user will have to prompt the LPC1768 through wireless or radio communication. In the future, we will test with RC transmitters and receivers and incorporate them in the circuit to simulate a UAS in the air. 
 \begin{figure}
+\begin{center}
+\includegraphics[width=\columnwidth]{figures/fig742.png}
+\end{center}
 \caption{Pin Allocations for the mbed LPC1768 Microcontroller \cite{mbed2019}}
 \label{fig:7.4.2}
 \end{figure}
@@ -409,6 +567,9 @@ This circuit represents the extraction device at a prototype level. In the air, 
 
 \subsubsection{Parrot Bebop UAS}
 \begin{figure}
+\begin{center}
+\includegraphics[width=0.3\columnwidth]{figures/fig751.png}
+\end{center}
 \caption{Parrot Bebop UAS \cite{parrot2019parrot}}
 \label{fig:7.5.1}
 \end{figure}
@@ -416,6 +577,11 @@ The Parrot Bebop UAS is a small scale prototype of the DJI Matrice 100. Testing 
 
 \subsubsection{Cigar Cutter Prototype}
 \begin{figure}
+\begin{center}
+\includegraphics[height=1.3in]{figures/fig752a.png}
+\includegraphics[height=1.3in]{figures/fig752b.png}
+\includegraphics[height=1.3in]{figures/fig752c.png}
+\end{center}
 \caption{Cigar Cutter Prototype}
 \label{fig:7.5.2}
 \end{figure}
@@ -423,6 +589,9 @@ The cigar cutter prototype is fully functional and is able to accurately and rel
 
 \subsubsection{Mouse Trap Prototype}
 \begin{figure}
+\begin{center}
+\includegraphics[width=0.5\columnwidth]{figures/fig753.jpg}
+\end{center}
 \caption{Mouse Trap Prototype}
 \label{fig:7.5.3}
 \end{figure}
@@ -432,6 +601,10 @@ The Mouse Trap Prototype is designed to cut through the plant with shear force a
 As seen in \fref{fig:7.5.4}, %??figure 4.5.1
 the Motor Driven Sheer and Servo Driven Gripper are designed to more accurately cut and grip our desired plant. The motor drives a shaft connected to a worm drive. The worm drive will turn a gear that creates a linear motion through links that will moves the shears to open and close. Furthermore we will have a servo driven gripper placed on top of the shear to simultaneously grab onto the plant.
 \begin{figure}
+\begin{center}
+\includegraphics[width=0.4\columnwidth]{figures/fig754a.png}
+\includegraphics[width=0.4\columnwidth]{figures/fig754b.png}
+\end{center}
 \caption{Motorized Shear Prototype}
 \label{fig:7.5.4}
 \end{figure}
@@ -442,6 +615,10 @@ the Motor Driven Sheer and Servo Driven Gripper are designed to more accurately 
 
 \subsection{Software Structure}
 \begin{figure}
+%\begin{center}
+%\includegraphics[width=0.8\columnwidth]{figures/fig761.png}
+%\end{center}
+\lstinputlisting[style=mbedC]{code/mbed/motor-control/main.cpp}
 \caption{Pseudocode for the mbed LPC1768 Microcontroller to Control a Motor}
 \label{fig:7.6.1}
 \end{figure}
@@ -473,25 +650,26 @@ In regards to simulations for the extraction device, there are currently two pro
 \begin{table}
 \caption{Work Breakdown for each Team member}
 \label{tab:8.1.1}
+\begin{center}
+\includegraphics[width=\columnwidth]{figures/table-811.jpg}
+\end{center}
 \end{table}
-
-%Ji
-%Ji is Weapons, Robotics, and Controls Engineering major with knowledge of MATLAB, C, and systems integration. He will be responsible for understanding and implementing waypoints for the surveying of the operation. The landing method will be devised. He will be responsible for test flying the UAS with the extraction device attached with already established safety protocols. He is the pilot of the UAS, responsible for its safe operations.
-%Jacob
-%Jacob is a Weapons, Robotics, and Controls Engineering major with knowledge of MATLAB, C, and systems integration. Jacob is the communicator for the team and leader of the software and electrical subsystems. During boat operations, Jacob is the boatswain and is responsible for the safety of the crew and vessel. Jacob has completed his power driven vessel qualifications. 
-%Bryan
-%Bryan is a Weapons, Robotics, and Controls Engineering major with knowledge of MATLAB, C, and systems integration. Bryan will develop a prototype of powered extraction device with Levi. He will be responsible for UAS configurations (additional battery, potential camera addition). Bryan is the assistant pilot who will be in charge of activation of the extraction device during the operation.
-%Reina
-%Reina is a Mechanical Engineering major with knowledge of SolidWorks, and project management.  Reina is part of the subteam that works with the snipper/gripper attachment of the UAS.  She comes up with new ideas for the team to try for the snipper/gripper system and uses her artistic skills to create drawings of current and future designs.  She also is knowledgeable about the project management aspect, and creates scheduling graphics using microsoft project.  Reina takes photos and videos of UAS operations.
-%Levi
-%Levi is a Mechanical Engineering major with knowledge of SolidWorks.  Levi is part of the subteam that works with the snipper/gripper attachment of the UAS. He is currently working on a new prototype with 1/C Bryan that will incorporate motors into the extraction device. 
 
 \subsection{Timeline}
 \begin{table}
 \caption{Timeline}
 \label{tab:8.2.2}
+\begin{center}
+\includegraphics[width=0.8\columnwidth]{figures/table-821.png}
+\end{center}
 \end{table}
+
+\clearpage
 \begin{figure}
+\begin{center}
+%\includegraphics[angle=90,width=\columnwidth]{figures/table-822.png}
+\includegraphics[width=\columnwidth]{figures/gantt.png}
+\end{center}
 \caption{Gantt Chart}
 \label{tab:8.2.3}
 \end{figure}
@@ -502,9 +680,54 @@ In regards to simulations for the extraction device, there are currently two pro
 
 \subsection{Risk management}
 \begin{table}
-\caption{List details for risks and mitigation steps}
-\label{tab:8.3.1}
+\caption{Risk of dropping UAS in water}
+\label{tab:8.3.1a}
+\includegraphics[width=\columnwidth]{figures/table-831a.jpg}
 \end{table}
+
+\begin{table}
+\caption{Risk of not cutting plant completely}
+\label{tab:8.3.1b}
+\includegraphics[width=\columnwidth]{figures/table-831b.jpg}
+\end{table}
+
+\begin{table}
+\caption{Risk of running out of battery / flight time}
+\label{tab:8.3.1c}
+\includegraphics[width=\columnwidth]{figures/table-831c.jpg}
+\end{table}
+
+\begin{table}
+\caption{Risk of collision}
+\label{tab:8.3.1d}
+\includegraphics[width=\columnwidth]{figures/table-831d.jpg}
+\end{table}
+
+\begin{table}
+\caption{Risk of crew overboard}
+\label{tab:8.3.1e}
+\includegraphics[width=\columnwidth]{figures/table-831e.jpg}
+\end{table}
+
+\begin{table}
+\caption{Risk of actuation failure of snipper}
+\label{tab:8.3.1f}
+\includegraphics[width=\columnwidth]{figures/table-831f.jpg}
+\end{table}
+
+\begin{table}
+\caption{Risk of getting lost at sea}
+\label{tab:8.3.1g}
+\includegraphics[width=\columnwidth]{figures/table-831g.jpg}
+\end{table}
+
+\begin{table}
+\caption{Risk of injury while recovering UAS}
+\label{tab:8.3.1i}
+\includegraphics[width=\columnwidth]{figures/table-831i.jpg}
+\end{table}
+
+
 
 
 
@@ -541,11 +764,17 @@ During the operation simulation, we found that the DJI Matrice 100 UAS is very s
 
 Landing maneuvers were conducted for both pilots (1/C Jisub and 1/C Bryan) and both landings were successful. We measured the distance from the center of the landing platform to the center of the drone. The data for that is discussed further below in the report. The space availability on the mock up of the boat was adequate, but there is a need for consideration of what type of boat we will be using in California as compared to the powered boat that is available at USNA. 
 \begin{figure}
+\begin{center}
+\includegraphics[width=0.5\columnwidth]{figures/fig921.png}
+\end{center}
 \caption{A photo of the landing platform layout}
 \label{fig:9.2.1}
 \end{figure}
 \begin{figure}
-\caption{A photo of the S.T.E.V.E. team simulating UAS operations from the boat}
+\begin{center}
+\includegraphics[width=0.5\columnwidth]{figures/fig922.png}
+\end{center}
+\caption{A photo of the STEVE team simulating UAS operations from the boat}
 \label{fig:9.2.2}
 \end{figure}
 
@@ -555,6 +784,9 @@ Landing maneuvers were conducted for both pilots (1/C Jisub and 1/C Bryan) and b
 \subsubsection{Battery life test}
 Test: Battery Life
 \begin{figure}
+\begin{center}
+\includegraphics[width=\columnwidth]{figures/fig923.png}
+\end{center}
 \caption{A graph showing the battery life of the TB48D (blue) and the TB47D (orange)}
 \label{fig:9.2.3}
 \end{figure}
@@ -575,52 +807,47 @@ Experiment: Using the purchased cigar cutter, twigs of different thicknesses wil
 
 In order to test how much force it takes to cut the branch, a scale was placed underneath the cigar cutter.  The blades were opened, the branch was fed into the hole, and the blades were pushed together by the scale on the bottom, and the hand on top.  The cedar branch was used because it is a fibrous plant that is harder to cut than most other plants.  Knowing the force required to cut each diameter can help us determine the amount of force our design needs to apply.  The test was conducted on two different plants: the cedar and the unknown softer twig.
 \begin{table}
+%\begin{center}
+%\includegraphics[width=\columnwidth]{figures/table-921.png}
+%\end{center}
 \caption{Table testing required force to cut various twigs of various diameters}
 \label{tab:9.2.1}
+\begin{center}
+\begin{tabular}{ccc}
+\toprule
+& twig diameter, \si{\milli\meter} & force to cut, \si{\poundforce} \\
+\midrule
+cedar & 4.9 & 34, 35, 38$_1$\\
+cedar & 3.85 & 18 \\
+cedar & 3.8 & 16 \\
+cedar & 3.61 & 17 \\
+cedar & 3.58 & 15 \\
+cedar & 3.39 & 14 \\
+cedar & 3.10 & 13 \\
+softer & 1.66 & 0.31 \\
+softer & 2.12 & 0.69 \\
+softer & 2.4 & 0.81 \\
+softer & 2.82 & 4 \\
+softer & 3.06 & 9 \\
+softer & 3.53 & 11, 11, 12$_1$\\
+softer & 3.79 & 14 \\
+softer & 3.75 & 14 \\
+softer & 4.48 & 24 \\
+softer & 4.56 & 24 \\
+softer & 4.76 & 26 \\
+\bottomrule
+\end{tabular}
+\vspace{2em}
+
+$^1$multiple tests of same diameter
+\end{center}
 \end{table}
-%
-%Twig Diameter (mm)
-%Force to cut (lbw)
-%4.9 (cedar)
-%34, 35, 38 (multiple tests on same diameter)
-%3.85 (cedar)
-%18
-%
-%3.8 (cedar)
-%16
-%3.62 (cedar)
-%17
-%3.58 (cedar)
-%15
-%3.39 (cedar)
-%14
-%3.10 (cedar)
-%13
-%1.66 (softer)
-%0.31
-%2.12 (softer)
-%0.69
-%2.4 (softer)
-%0.81
-%2.82 (softer)
-%4
-%3.06 (softer)
-%9
-%3.53 (softer)
-%11, 11, 12 (multiple tests on same diameter)
-%3.79 (softer)
-%14
-%3.75 (softer)
-%14
-%4.48 (softer)
-%24
-%4.56 (softer)
-%24
-%4.76 (softer)
-%26
 
 
 \begin{figure}
+\begin{center}
+\includegraphics[width=\columnwidth]{figures/fig924.png}
+\end{center}
 \caption{A graph showing the force required to cut vs the diameter of the branch}
 \label{fig:9.2.4}
 \end{figure}
@@ -643,22 +870,19 @@ After landing, the distance of the center of the UAS from the center of the plat
 \begin{table}
 \caption{Landing time and distance from platform center measurement for each UAS pilot}
 \label{tab:9.2.2}
+\begin{center}
+\begin{tabular}{lll}
+\toprule
+landing time, \si{\second} & distance from platform center & UAS pilot \\
+\midrule
+48 & 8 & Ji \\
+70 & 8 & Ji \\
+90 & 12 & Bryan \\
+95 & 15 & Bryan \\
+\bottomrule
+\end{tabular}
+\end{center}
 \end{table}
-%Landing time (s)
-%Distance from platform center
-%UAS pilot
-%48
-%8
-%Jisub
-%70
-%8
-%Jisub
-%90
-%12
-%Bryan
-%95
-%15
-%Bryan
  
 Takeaways: 
 Jisub performed better as the UAS pilot than Bryan. The UAS lands automatically with the return-to-home feature which will not be applicable when the boat is moving. Angling the camera at \ang{90} is an accurate way to land manually. The other team members on the boat can assist with the landing of the drone as well. The UAS lands automatically at 10\% battery regardless of location, but there are a series of alarms and notifications before this happens.
